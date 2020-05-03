@@ -10,7 +10,7 @@ import lambda.LambdaExample;
  * <p> : Function which input value and then returning true/false
  * <p> "::" called "Method Reference"
  * <p> Example) Animal::isBear , Animal::isOldAnimal
- * <p> Next Course {@link LambdaExample}
+ * <p> Next Course {@link LambdaExample} to see replaceable "Lambda Expression" for "Predicate"
  */
 public class PredicateExample {
 
