@@ -3,9 +3,12 @@ package predicate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
+import lambda.LambdaExample;
 
 /**
- * What is Predicate ? : Function which input value and then returning true/false
+ * What is Predicate ?
+ * <h>: Function which input value and then returning true/false</h>
+ * <h>Next Course {@link LambdaExample}</h>
  */
 public class PredicateExample {
 
