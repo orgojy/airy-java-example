@@ -6,9 +6,11 @@ import java.util.function.Predicate;
 import lambda.LambdaExample;
 
 /**
- * What is Predicate ?
- * <h>: Function which input value and then returning true/false</h>
- * <h>Next Course {@link LambdaExample}</h>
+ * <p> What is Predicate ?
+ * <p> : Function which input value and then returning true/false
+ * <p> "::" called "Method Reference"
+ * <p> Example) Animal::isBear , Animal::isOldAnimal
+ * <p> Next Course {@link LambdaExample}
  */
 public class PredicateExample {
 
