@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
+/**
+ * What is Predicate ? : Function which input value and then returning true/false
+ */
 public class PredicateExample {
 
   public static class Animal {
