@@ -8,6 +8,8 @@ import java.util.function.Predicate;
  * <p> Various "Lambda Expression"
  * <p> - If you reuse "Lambda Expression" frequently, Use "Predicate Method" rather than "Lambda Expression"
  * <p> - If it used just One-time, Use "Lambda Expression"
+ *
+ * @author Yimin An
  */
 public class LambdaExpressionExample {
 

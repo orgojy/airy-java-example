@@ -6,9 +6,15 @@ import java.util.function.Predicate;
 
 /**
  * <p> "Lambda Expression" related with "Predicate"
+ * <p> Ex) (Animal a1, Animal a2) -> a1.getAge() > a2.getAge()
+ * <p> (Animal a1, Animal a2) : Parameter List of Lambda
+ * <p> -> : arrow of Lambda
+ * <p> a1.getAge() > a2.getAge() : body of Lambda
  * <p> - If you reuse "Lambda Expression" frequently, Use "Predicate Method" rather than "Lambda Expression"
  * <p> - If it used just One-time or Simple-code, Use "Lambda Expression"
  * <p> Next Course {@link LambdaExpressionExample} to see detailed "Lambda Expression"
+ *
+ * @author Yimin An
  */
 public class LambdaExample {
 

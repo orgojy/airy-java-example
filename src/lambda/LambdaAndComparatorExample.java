@@ -6,6 +6,8 @@ import java.util.List;
 
 /**
  * <p> Examples for sorting by Comparator or Lambda
+ *
+ * @author Yimin An
  */
 public class LambdaAndComparatorExample {
 

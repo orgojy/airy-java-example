@@ -11,6 +11,8 @@ import lambda.LambdaExample;
  * <p> "::" called "Method Reference"
  * <p> Example) Animal::isBear , Animal::isOldAnimal
  * <p> Next Course {@link LambdaExample} to see replaceable "Lambda Expression" for "Predicate"
+ *
+ * @author Yimin An
  */
 public class PredicateExample {
 
