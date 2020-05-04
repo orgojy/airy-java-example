@@ -5,9 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * <p> Functional Interface
- * <p> : Use to filter "Value Parameters"
- * <p>
+ * <p> Functional Interface "Predicate"
+ * <p> : To use "Behavior parameters", Use "Functional Interface"
+ * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
+ * <p> - You can check validation by declaring "@FunctionalInterface"
  *
  * @author Yimin An
  */
