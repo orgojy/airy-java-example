@@ -9,10 +9,11 @@ import java.util.List;
  * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
  * <p> - You can check validation by declaring "@FunctionalInterface"
  * <p> - To be used for processing inner logic by lambda expression, Use "Consumer"
- * <p> - Implemented interface {@link java.util.function.Consumer}
- * <p> Ex) {@link java.util.function.IntConsumer}, {@link java.util.function.DoubleConsumer} etc.
  *
  * @author Yimin An
+ * @see java.util.function.Consumer
+ * @see java.util.function.IntConsumer
+ * @see java.util.function.DoubleConsumer
  */
 public class ConsumerExample {
 

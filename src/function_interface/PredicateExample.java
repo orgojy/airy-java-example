@@ -10,10 +10,11 @@ import java.util.List;
  * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
  * <p> - You can check validation by declaring "@FunctionalInterface"
  * <p> - To be used for judging inner logic by lambda expression, Use "Predicate"
- * <p> - Implemented interface {@link java.util.function.Predicate}
- * <p> Ex) {@link java.util.function.IntPredicate}, {@link java.util.function.DoublePredicate} etc.
  *
  * @author Yimin An
+ * @see java.util.function.Predicate
+ * @see java.util.function.IntPredicate
+ * @see java.util.function.DoublePredicate
  */
 public class PredicateExample {
 

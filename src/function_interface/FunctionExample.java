@@ -10,10 +10,11 @@ import java.util.List;
  * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
  * <p> - You can check validation by declaring "@FunctionalInterface"
  * <p> - To be used for returning values by lambda expression, Use "Function"
- * <p> - Implemented interface {@link java.util.function.Function}
- * <p> Ex) {@link java.util.function.IntFunction}, {@link java.util.function.DoubleFunction} etc.
  *
  * @author Yimin An
+ * @see java.util.function.Function
+ * @see java.util.function.IntFunction
+ * @see java.util.function.DoubleFunction
  */
 public class FunctionExample {
 
