@@ -11,6 +11,7 @@ import java.util.List;
  * <p> - You can check validation by declaring "@FunctionalInterface"
  * <p> - To be used for judging inner logic by lambda expression, Use "Predicate"
  * <p> - Implemented interface {@link java.util.function.Predicate}
+ * <p> Ex) {@link java.util.function.IntPredicate}, {@link java.util.function.DoublePredicate} etc.
  *
  * @author Yimin An
  */
