@@ -35,7 +35,10 @@ public class PredicateExample {
     // Lambda expression for behavior parameter
     Predicate<String> nonEmptyStringPredicate = (String s) -> !s.isEmpty();
     // Filter for Array included with empty("")
-    List<String> nonEmpty = filter(Arrays.asList("apple", "", "bear", "car", ""), nonEmptyStringPredicate);
+    List<String> nonEmpty = PredicateExample.filter(
+        Arrays.asList("apple", "", "bear", "car", ""),
+        nonEmptyStringPredicate
+    );
     // apple bear car
     nonEmpty.forEach(System.out::println);
   }
