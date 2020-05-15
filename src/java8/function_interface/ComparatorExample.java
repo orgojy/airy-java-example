@@ -1,11 +1,11 @@
-package function_interface;
+package java8.function_interface;
 
 /**
  * <p> Functional Interface "Comparator"
  * <p> : To use "Behavior parameters", Use "Functional Interface"
  * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
  * <p> - You can check validation by declaring "@FunctionalInterface"
- * <p> - To be used for comparing values by lambda expression, Use "Comparator"
+ * <p> - To be used for comparing values by java8.lambda expression, Use "Comparator"
  *
  * @author Yimin An
  * @see java.util.Comparator

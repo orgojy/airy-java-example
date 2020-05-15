@@ -1,4 +1,4 @@
-package stream;
+package java8.stream;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -113,24 +113,24 @@ public class ComparisonCollectionAndStreamExample {
     }
     System.out.println("Benchmark...");
     for (int i = 0; i < 5; ++i) {
-      System.out.printf("Run %d:  collection %s  -  stream %s  -  parallel stream %s\n",
+      System.out.printf("Run %d:  collection %s  -  java8.stream %s  -  parallel java8.stream %s\n",
           i,
           // Code used By Java7
           test(() -> ComparisonCollectionAndStreamExample.getLowCaloricFoodsNameWithCollection(foodList)),
-          // Code used By stream of Java8
+          // Code used By java8.stream of Java8
           test(() -> ComparisonCollectionAndStreamExample.getLowCaloricFoodsNameWithStream(foodList)),
-          // Code used By parallel stream of Java8
+          // Code used By parallel java8.stream of Java8
           test(() -> ComparisonCollectionAndStreamExample.getLowCaloricFoodsNameWithParallelStream(foodList))
       );
 
 //     [Output]
 //      Warmup...
 //      Benchmark...
-//      Run 0:  collection   103ms  -  stream    95ms  -  parallel stream    40ms
-//      Run 1:  collection    96ms  -  stream    94ms  -  parallel stream    40ms
-//      Run 2:  collection    95ms  -  stream    96ms  -  parallel stream    41ms
-//      Run 3:  collection    98ms  -  stream    94ms  -  parallel stream    41ms
-//      Run 4:  collection    96ms  -  stream    94ms  -  parallel stream    42ms
+//      Run 0:  collection   103ms  -  java8.stream    95ms  -  parallel java8.stream    40ms
+//      Run 1:  collection    96ms  -  java8.stream    94ms  -  parallel java8.stream    40ms
+//      Run 2:  collection    95ms  -  java8.stream    96ms  -  parallel java8.stream    41ms
+//      Run 3:  collection    98ms  -  java8.stream    94ms  -  parallel java8.stream    41ms
+//      Run 4:  collection    96ms  -  java8.stream    94ms  -  parallel java8.stream    42ms
     }
   }
 }

@@ -1,9 +1,9 @@
-package predicate;
+package java8.predicate;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import lambda.LambdaExample;
+import java8.lambda.LambdaExample;
 
 /**
  * <p> What is "Predicate"?

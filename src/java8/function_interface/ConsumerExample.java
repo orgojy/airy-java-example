@@ -1,4 +1,4 @@
-package function_interface;
+package java8.function_interface;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
  * <p> : To use "Behavior parameters", Use "Functional Interface"
  * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
  * <p> - You can check validation by declaring "@FunctionalInterface"
- * <p> - To be used for processing inner logic by lambda expression, Use "Consumer"
+ * <p> - To be used for processing inner logic by java8.lambda expression, Use "Consumer"
  *
  * @author Yimin An
  * @see java.util.function.Consumer

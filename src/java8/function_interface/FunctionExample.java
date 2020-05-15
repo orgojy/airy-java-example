@@ -1,4 +1,4 @@
-package function_interface;
+package java8.function_interface;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import java.util.List;
  * <p> : To use "Behavior parameters", Use "Functional Interface"
  * <p> - You can implement dynamic parameters for behavior by using "Functional Interface"
  * <p> - You can check validation by declaring "@FunctionalInterface"
- * <p> - To be used for returning values by lambda expression, Use "Function"
+ * <p> - To be used for returning values by java8.lambda expression, Use "Function"
  *
  * @author Yimin An
  * @see java.util.function.Function
