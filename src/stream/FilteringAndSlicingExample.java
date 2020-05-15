@@ -3,7 +3,6 @@ package stream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * <p> Stream method Example of "filter", "distinct", "limit", "skip"
@@ -12,7 +11,6 @@ import org.apache.commons.lang3.StringUtils;
  *
  * @author Yimin An
  * @see java.util.stream.Stream
- * @see org.apache.commons.lang3
  */
 public class FilteringAndSlicingExample {
 
@@ -42,13 +40,13 @@ public class FilteringAndSlicingExample {
         .skip(5)
         .collect(Collectors.toList());
 
-    System.out.println("example1: " + StringUtils.join(example1, ","));
-    System.out.println("example2: " + StringUtils.join(example2, ","));
-    System.out.println("example3: " + StringUtils.join(example3, ","));
-    System.out.println("example4: " + StringUtils.join(example4, ","));
-//    example1: 4,5,5,4
-//    example2: 1,2,3,4,5
-//    example3: 1,2,3
-//    example4: 5,4,3,2,1
+    System.out.println("example1: " + Arrays.toString(example1.toArray()));
+    System.out.println("example2: " + Arrays.toString(example2.toArray()));
+    System.out.println("example3: " + Arrays.toString(example3.toArray()));
+    System.out.println("example4: " + Arrays.toString(example4.toArray()));
+//    example1: [4, 5, 5, 4]
+//    example2: [1, 2, 3, 4, 5]
+//    example3: [1, 2, 3]
+//    example4: [5, 4, 3, 2, 1]
   }
 }
