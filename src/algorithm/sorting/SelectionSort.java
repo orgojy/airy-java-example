@@ -14,27 +14,35 @@ public class SelectionSort {
   }
 
   private static int[] sortAscendingOrder(int[] A) {
-    for (int i = 0; i < A.length - 1; i++) {
-      for (int j = i + 1; j < A.length; j++) {
-        if (A[i] > A[j]) {
-          int temp = A[i];
-          A[i] = A[j];
-          A[j] = temp;
+    int index = 0, temp, min;
+    for (int i = 0; i < A.length; i++) {
+      min = 9999;
+      for (int j = i; j < A.length; j++) {
+        if (min > A[j]) {
+          min = A[j];
+          index = j;
         }
       }
+      temp = A[i];
+      A[i] = A[index];
+      A[index] = temp;
     }
     return A;
   }
 
   private static int[] sortDescendingOrder(int[] A) {
-    for (int i = 0; i < A.length - 1; i++) {
-      for (int j = i + 1; j < A.length; j++) {
-        if (A[i] < A[j]) {
-          int temp = A[i];
-          A[i] = A[j];
-          A[j] = temp;
+    int index = 0, temp, max;
+    for (int i = 0; i < A.length; i++) {
+      max = 0;
+      for (int j = i; j < A.length; j++) {
+        if (max < A[j]) {
+          max = A[j];
+          index = j;
         }
       }
+      temp = A[i];
+      A[i] = A[index];
+      A[index] = temp;
     }
     return A;
   }
