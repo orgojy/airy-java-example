@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <p> Utility method "allMatch", "noneMatch", "anyMatch"
+ * <p> Utility method "allMatch", "noneMatch", "anyMatch", "findAny", "findFirst"
  * <p> : method using for efficient "Short circuit"
  * <p> * What is "Short circuit"? "Even if it doesn't tours all elements, turn out whether true or not."
  * <p> - If "allMatch" finds element which is not matched, operation is terminated and return boolean result(false).
  * <p> - If "noneMatch" finds element which is matched, operation is terminated and return boolean result(false).
  * <p> - If "anyMatch" finds element which is matched, operation is terminated and return boolean result(true).
+ * <p> - If "findAny" with "filter" finds element which is matched, operation is terminated and return element.
+ * <p> - If "findFirst" with "filter" finds element which is matched, operation is terminated and return element.
  *
  * @author Yimin An
  */
@@ -51,9 +53,9 @@ public class StreamMatchExample {
 
   public static void main(String[] args) {
     List<Food> foods = new ArrayList<>();
-    foods.add(new Food(1, "Potato", 300));
     foods.add(new Food(2, "Beef", 800));
-    foods.add(new Food(3, "Fort", 500));
+    foods.add(new Food(3, "Pork", 500));
+    foods.add(new Food(1, "Potato", 300));
     foods.add(new Food(4, "Butter", 1100));
 
     System.out.println(foods.stream().allMatch((Food f) -> f.getCalories() < 500) ? "Heathy" : "Unhealty");
@@ -62,5 +64,11 @@ public class StreamMatchExample {
 //    Unhealty
 //    Healthy
 //    NotBad
+    foods.stream().filter((Food f) -> f.getCalories() < 800).findAny()
+        .ifPresent((Food f) -> System.out.println(f.getName()));
+    foods.stream().filter((Food f) -> f.getCalories() < 800).findFirst()
+        .ifPresent((Food f) -> System.out.println(f.getName()));
+//    Pork
+//    Pork
   }
 }
