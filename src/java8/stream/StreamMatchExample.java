@@ -13,6 +13,10 @@ import java.util.List;
  * <p> - If "findAny" with "filter" finds element which is matched, operation is terminated and return element.
  * <p> - If "findFirst" with "filter" finds element which is matched, operation is terminated and return element.
  *
+ * <p> Difference between "findAny" and "findFirst" with ".parallelStream()" exists.
+ * <p> "findFirst" operates (1) parallel find, (2) merge, (3) and return first element which is found in list.
+ * <p> "findAny" operates (1) parallel find (2) and return any element which is found.
+ *
  * @author Yimin An
  */
 public class StreamMatchExample {
