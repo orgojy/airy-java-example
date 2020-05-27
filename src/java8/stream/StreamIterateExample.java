@@ -4,7 +4,8 @@ import java.util.stream.Stream;
 
 /**
  * <p> Utility method "iterate" of Stream
- * : Use to get stream from iterative logic
+ * <p> : Use to get stream from iterative logic
+ * <p> - It generates infinite stream call "Unbounded stream"
  *
  * @author Yimin An
  */
